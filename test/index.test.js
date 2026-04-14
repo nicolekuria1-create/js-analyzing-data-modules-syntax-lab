@@ -1,4 +1,4 @@
-const {
+﻿const {
   combineUsers
   } = require('../index');
   require('datejs');
