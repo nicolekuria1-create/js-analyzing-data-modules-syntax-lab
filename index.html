@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Merge Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main class="shell">
+        <section class="card intro reveal">
+            <p class="eyebrow">Merged Platform Tool</p>
+            <h1>Combine user lists and stamp merge date</h1>
+            <p>
+                Enter one or more username lists. Use commas inside each box,
+                then press merge.
+            </p>
+        </section>
+
+        <section class="card reveal delay-1">
+            <form id="mergeForm">
+                <div id="listContainer" class="list-grid"></div>
+                <div class="actions">
+                    <button type="button" id="addListBtn" class="ghost">+ Add list</button>
+                    <button type="submit" class="primary">Merge users</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card output reveal delay-2" id="outputCard" aria-live="polite">
+            <h2>Result</h2>
+            <pre id="result">No output yet.</pre>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
